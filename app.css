@@ -5,7 +5,8 @@
 }
 
 body {
-    background: #1af8f8;
+    background: #291af8;
+    color: white;
 }
 
 .header {
@@ -14,5 +15,75 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #ba70ff;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .4s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #1ad7f8;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1ad7f8;
+}
+
+.home-content p {
+    font-size: 16px;
+}
+
+.home-content .button-home {
+    width: 345px;
+    height: 50px;
+    background: #1ad7f8;
+}
+
+.button-home a {
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background:#291af8;
+    border: 2px solid #291af8;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #1ad7f8;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
